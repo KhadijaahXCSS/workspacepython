@@ -1,4 +1,6 @@
+
 def calcul(a, b, operation):
+	
 	if operation == "addition":
 		return a + b
 	elif operation == "soustraction":
@@ -10,5 +12,12 @@ def calcul(a, b, operation):
 			return a / b
 		else:
 			return "Erreur"
+
 	else:
-		return "Erreur d'operation"
+		return "Opération non valide"
+	
+operation = input("Entrez l'opération : ")
+a = float(input("Entrez le premier nombre : "))				
+b = float(input("Entrez le deuxième nombre : "))
+resultat = calcul(a, b, operation)
+print("Le résultat est :", resultat)
