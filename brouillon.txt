@@ -1,0 +1,12 @@
+
+def dictionnaire(liste_eleve):
+    if liste_eleve == nom_eleve:
+        return {nom_eleve: note_eleve}
+    else:
+        return "erreur,voici la liste des eleves"
+
+print ("saisissez le nom de l'élève")
+nom_eleve= input("Quel est votre nom ? ")
+reponse= dictionnaire(liste_eleve)
+print(reponse)   
+

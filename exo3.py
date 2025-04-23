@@ -1,13 +1,11 @@
-def eleve():
-    prenom = input("Entrez le prénom de l'élève : ")
-    note = input("Entrez la note de l'élève : ")
-    return (prenom, note)
-
-def dictionnaire(eleve):
-    prenom, note = eleve  
-    if dictionnaire==prenom :
-        return {
-            "note": note
-        }
+def rechercher_note(dictionnaire_eleves, nom_recherche):
+    if nom_recherche in dictionnaire_eleves:
+        return dictionnaire_eleves[nom_recherche]
     else:
-        return "Erreur eleve non trouve"
+        return "Erreur : Élève non trouvé."
+
+
+eleves = {"Ali": 14, "Fatou": 16, "Moussa": 12}
+
+print(rechercher_note(eleves, "Fatou"))  
+print(rechercher_note(eleves, "Jean"))   
