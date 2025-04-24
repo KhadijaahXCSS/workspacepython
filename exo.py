@@ -11,12 +11,12 @@ def calcul(a, b, operation):
 		if b != 0:
 			return a / b
 		else:
-			return "Erreur"
+			return "erreur"
 
 	else:
-		return "Operation non valide"
+		return "operation non valide"
 	
-operation = input("Entrez l'opération : ")
+operation = input("Entrez l'operation : ")
 a = float(input("Entrez le premier nombre : "))				
 b = float(input("Entrez le deuxième nombre : "))
 resultat = calcul(a, b, operation)
