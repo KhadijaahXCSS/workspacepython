@@ -14,7 +14,7 @@ def calcul(a, b, operation):
 			return "Erreur"
 
 	else:
-		return "Opération non valide"
+		return "Operation non valide"
 	
 operation = input("Entrez l'opération : ")
 a = float(input("Entrez le premier nombre : "))				
