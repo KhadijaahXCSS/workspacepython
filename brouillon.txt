@@ -10,3 +10,8 @@ nom_eleve= input("Quel est votre nom ? ")
 reponse= dictionnaire(liste_eleve)
 print(reponse)   
 
+
+
+def update_tache(self, tache_id, description):
+        self.task_table.update({"description": description}, doc_ids=[tache_id])
+        print(f"Tache {tache_id} mise a jour avec la nouvelle description : {description}")
